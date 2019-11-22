@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Spectator/Spectator.tscn" type="PackedScene" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 20, 2, 10 )
+
+[node name="ProceduralLevel" type="Spatial"]
+
+[node name="Spectator" parent="." instance=ExtResource( 1 )]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = null
